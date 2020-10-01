@@ -28,14 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
+            this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // RadForm1
-            //
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(292, 270);
             this.Name = "RadForm1";
+            // 
+            // 
+            // 
+            this.RootElement.ApplyShapeToControl = true;
             this.Text = "RadForm1";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
@@ -43,5 +50,8 @@
         }
 
         #endregion
+
+        private Telerik.WinControls.Themes.FluentTheme fluentTheme1;
+        private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
     }
 }

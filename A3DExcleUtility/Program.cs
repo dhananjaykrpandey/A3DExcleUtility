@@ -3,6 +3,7 @@ using A3DWinUtility;
 using System;
 using System.Linq;
 using System.Windows.Forms;
+using Telerik.WinControls;
 
 namespace A3DExcleUtility
 {
@@ -19,6 +20,11 @@ namespace A3DExcleUtility
             //Application.Run(new RadForm1());
             try
             {
+                Telerik.WinControls.Themes.FluentTheme FluentTheme = new Telerik.WinControls.Themes.FluentTheme();
+                Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme = new Telerik.WinControls.Themes.FluentDarkTheme();
+                ThemeResolutionService.ApplicationThemeName = "Fluent";
+                ThemeResolutionService.AllowAnimations = true;
+                //RadMessageBox.SetThemeName(FluentTheme.ThemeName);
                 if (ClsUtility._IClsUtility.CheckLicense() == false)
                 {
                     A3DLicense.FrmLicense ObjLic = new A3DLicense.FrmLicense();
